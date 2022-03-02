@@ -8,6 +8,7 @@ export async function handleBlock(block: SubstrateBlock): Promise<void> {
     let record = new StarterEntity(block.block.header.hash.toString());
     //Record block number
     record.field1 = block.block.header.number.toNumber();
+    throw "eeeerrrroooooo";
     await record.save();
 }
 
@@ -18,9 +19,8 @@ export async function handleEvent(event: SubstrateEvent): Promise<void> {
     record.field2 = account.toString();
     //Big integer type Balance of a transfer event
     record.field3 = (balance as Balance).toBigInt();
-    let ccc = null;
-    ccc.aaa.ddd.eee ="xxx";
-    await record.aaa();
+    throw "eeeerrrroooooo";
+    await record.save();
 }
 
 export async function handleCall(extrinsic: SubstrateExtrinsic): Promise<void> {
@@ -29,6 +29,7 @@ export async function handleCall(extrinsic: SubstrateExtrinsic): Promise<void> {
     record.field4 = extrinsic.block.timestamp;
     //Boolean tyep
     record.field5 = true;
+    throw "eeeerrrroooooo";
     await record.save();
 }
 
