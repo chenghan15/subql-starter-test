@@ -1,32 +1,17 @@
 type StarterEntity @entity {
 
-@@@@
-##
-$$$
-%^^^&&&&***()
-"
+  id: ID! #id is a required field
 
-{
+  field1: Int!
 
+  field2: String #filed2 is an optional field
 
-  :
-
-
-  >>>
-
-
-
-?
-  fjdiso: Int!
-
-  fielfdsfsd2: String #filed2 is an optional field
-
-  fieldsd3: BigInt
+  field3: BigInt
 
   field4: Date
 
   field5: Boolean
 
-fdsafds
+
 
 }
