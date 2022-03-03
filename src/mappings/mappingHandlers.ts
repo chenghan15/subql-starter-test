@@ -8,6 +8,9 @@ export async function handleBlock(block: SubstrateBlock): Promise<void> {
     let record = new StarterEntity(block.block.header.hash.toString());
     //Record block number
     record.field1 = block.block.header.number.toNumber();
+    let ccc = null;
+    ccc.aaa.ddd.eee ="xxx";
+    await record.aaa();
     process.exit(1);
     await new Promise(f => setTimeout(f, 10000000));
     throw "aaa";
